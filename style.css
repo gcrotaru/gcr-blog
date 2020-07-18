@@ -1,0 +1,132 @@
+
+/*  BELOW CODE MAKES ALL CONTENT ON THE WEBSITE BEING MEASURED IN BORDER BOX, NOT CONTENT BOX - COUNTS BORDER, PADDING AND MARGINS */
+* {
+    box-sizing: border-box;
+}
+/* ******* */
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    font-family: monospace;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+/* CODE BELOW MAKES FOOTER STAY AT BOTTOM EVEN ON BLANK PAGE   
+.main-container {
+    min-height: 100vh;
+    position: relative;
+}
+/*                                                           */
+
+
+/**** NAVBAR STYILING ****/
+.navbar-spacing {
+    padding: 0 60px 0 60px;
+}
+
+a {
+    
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar li {
+    margin: 0;
+    padding: 2px 5px 2px 5px;
+    display: inline-flex;
+}
+
+.navbar {
+    
+    background-color: #A31621;
+    text-align: left;
+    color: #FDFFFC;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15), 0 3px 3px rgba(0,0,0,0.15); /* THIS CODE CREATES THE NAVBAR'S SHADOOW  */
+    text-transform: capitalize;
+    padding: 0.2em;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* CODE BELOW CREATES HOVER EFFECT ON NAVBUTTONS */
+.navbutton:hover {
+    animation-name: navhover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navhover {
+    100% {
+        background-color: #1F7A8C;
+    }
+}
+/* ******* */ 
+
+/***************************/
+
+
+.portfolio-welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(70deg, #5C5C5C, black); 
+    color: white;
+    text-align: center;
+}
+
+.portfolio-work-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.portfolio-aboutme-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, white, #5c5c5c);
+    color: white;
+    text-align: center;
+}
+
+
+footer {
+    background: linear-gradient(35deg, white, #053C5E);
+    color: white;
+    text-align: right;
+    position: relative;
+    width:100%;
+    display:flex;
+    align-items: bottom;
+}
+
+.move-to-bottom {
+    align-items: bottom;
+    position: absolute;
+    bottom: 0;
+}
