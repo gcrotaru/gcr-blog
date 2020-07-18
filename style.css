@@ -115,7 +115,7 @@ a {
 }
 
 
-footer {
+/* footer {
     background: linear-gradient(35deg, white, #053C5E);
     color: white;
     text-align: right;
@@ -129,4 +129,4 @@ footer {
     align-items: bottom;
     position: absolute;
     bottom: 0;
-}
+*/ 
