@@ -1,54 +1,30 @@
 
-/*  BELOW CODE MAKES ALL CONTENT ON THE WEBSITE BEING MEASURED IN BORDER BOX, NOT CONTENT BOX - COUNTS BORDER, PADDING AND MARGINS */
+/*  #make all content on website being measured in border box instead of content box: counts border, padding, and margins */
 * {
     box-sizing: border-box;
 }
-/* ******* */
-
-html {
-	scroll-behavior: smooth;
-}
+/* end# */
 
 body {
     font-family: monospace;
     margin: 0px;
     padding: 0px;
-    width: 100%;
+    /* overflow: hidden;              REASON WHY IS IN COMMENT: CODE NOT WORKING YET!!! */
 }
 
-/* CODE BELOW MAKES FOOTER STAY AT BOTTOM EVEN ON BLANK PAGE   
-.main-container {
-    min-height: 100vh;
-    position: relative;
-}
-/*                                                           */
-
-
-/**** NAVBAR STYILING ****/
-.navbar-styling {
-    padding: 0;
-    width: 35%;
-    display: inline-flex;
-    justify-content: space-evenly;
-
+/* .container {                       REASON WHY IS IN COMMENT: CODE NOT WORKING YET!!!
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
-a {
-    
-    text-decoration: none;
-    color: inherit;
+section {
+    scroll-snap-align: center;
 }
-/**** CODE BELOW MAKES LIST'S BULLET POINTS DISSAPEAR AND SHOW LIST INLINE ***/
-.navbar li {
-    margin: 0;
-    display: inline-flex;
-}
-/* *** */
+*/ 
 
-.navbutton {
-    padding: 1px 7px 1px 7px; /* INDIVIDUAL BUTTON STYLING */
-}
 
+/** start navbar styling **/
 .navbar {
     
     background-color: #DB222A;
@@ -56,7 +32,7 @@ a {
     color: #FDFFFC;
     font-weight: bold;
     font-size: 16px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15), 0 3px 3px rgba(0,0,0,0.15); /* THIS CODE CREATES THE NAVBAR'S SHADOOW  */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15), 0 3px 3px rgba(0,0,0,0.15); /* navbar shadow */
     text-transform: capitalize;
     padding: 0.2em;
     padding-left: 0px;
@@ -68,8 +44,23 @@ a {
     left: 0;
     width: 100%;
 }
+.navbar ul {
+    padding: 0;
+    width: 35%;
+    display: inline-flex;
+    justify-content: space-evenly;
 
-/* CODE BELOW CREATES HOVER EFFECT ON NAVBUTTONS */
+}
+.navbar ul li {
+    margin: 0;
+    display: inline-flex;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* hover effect on navbuttons */
 .navbutton:hover {
     animation-name: navhover;
     animation-duration: 500ms;
@@ -82,9 +73,15 @@ a {
         color: white;
     }
 }
-/* ******* */ 
+/* end hover effect on navbuttons */ 
 
-/***************************/
+
+
+.navbutton {
+    padding: 1px 7px 1px 7px; /* INDIVIDUAL BUTTON STYLING */
+}
+
+/** end navbar styling **/
 
 
 .portfolio-welcome-section {
@@ -126,20 +123,3 @@ a {
     color: white;
     text-align: center;
 }
-
-
-/* footer {
-    background: linear-gradient(35deg, white, #053C5E);
-    color: white;
-    text-align: right;
-    position: relative;
-    width:100%;
-    display:flex;
-    align-items: bottom;
-}
-
-.move-to-bottom {
-    align-items: bottom;
-    position: absolute;
-    bottom: 0;
-*/ 
