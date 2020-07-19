@@ -37,8 +37,8 @@ section {
     padding: 0.2em;
     padding-left: 0px;
     padding-right: 0px;
-    display: flex;
-    justify-content: flex-end;
+    display: inline-flex;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -46,8 +46,10 @@ section {
 }
 .navbar ul {
     padding: 0;
+    margin: 7px;
     width: 35%;
     display: inline-flex;
+    align-items: center;
     justify-content: space-evenly;
 
 }
@@ -55,9 +57,17 @@ section {
     margin: 0;
     display: inline-flex;
 }
-.navbar ul li a {
+.navbar a {
     text-decoration: none;
     color: inherit;
+}
+.navbar-text {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 7px 2px 7px;
+    margin-left: 1rem;
 }
 
 /* hover effect on navbuttons */
@@ -78,7 +88,7 @@ section {
 
 
 .navbutton {
-    padding: 1px 7px 1px 7px; /* INDIVIDUAL BUTTON STYLING */
+    padding: 2px 7px 2px 7px; /* INDIVIDUAL BUTTON STYLING */
 }
 
 /** end navbar styling **/
