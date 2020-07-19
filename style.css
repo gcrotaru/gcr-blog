@@ -12,7 +12,7 @@ body {
     /* overflow: hidden;              REASON WHY IS IN COMMENT: CODE NOT WORKING YET!!! */
 }
 
-/* .container {                       REASON WHY IS IN COMMENT: CODE NOT WORKING YET!!!
+/* .main-page-container {                       REASON WHY IS IN COMMENT: CODE NOT WORKING YET!!!
     overflow-y: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
