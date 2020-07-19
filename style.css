@@ -43,7 +43,7 @@ a {
 
 .navbar {
     
-    background-color: #A31621;
+    background-color: #DB222A;
     text-align: left;
     color: #FDFFFC;
     font-weight: bold;
@@ -81,11 +81,15 @@ a {
 .portfolio-welcome-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(70deg, #5C5C5C, black); 
+    /* background: linear-gradient(70deg, #5C5C5C, black); */
+    background-color: black;
+    background-image: url('./images/background4.jpg');
+    background-size: cover;
+    background-position: center;
     color: white;
     text-align: center;
 }
