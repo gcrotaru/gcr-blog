@@ -5,23 +5,27 @@
 }
 /* end# */
 
+
 body {
-    font-family: monospace;
+    font-family: 'Roboto Condensed', sans-serif;
     margin: 0px;
     padding: 0px;
-    /* overflow: hidden;              REASON WHY IS IN COMMENT: CODE NOT WORKING YET!!! */
+    width: 100vw;
+    height: 100vh;
+   /* overflow: hidden;           /*   REASON WHY IS IN COMMENT: CODE NOT WORKING YET!!! */
 }
 
-/* .main-page-container {                       REASON WHY IS IN COMMENT: CODE NOT WORKING YET!!!
-    overflow-y: scroll;
+
+/*.main-page-container {                     REASON WHY IS IN COMMENT: CODE NOT WORKING YET!!! 
+    display: block;
     scroll-behavior: smooth;
+    overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
-
 section {
-    scroll-snap-align: center;
-}
-*/ 
+    scroll-snap-align: center; 
+} 
+*/
 
 
 /** start navbar styling **/
@@ -33,7 +37,6 @@ section {
     font-weight: bold;
     font-size: 16px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.15), 0 3px 3px rgba(0,0,0,0.15); /* navbar shadow */
-    text-transform: capitalize;
     padding: 0.2em;
     padding-left: 0px;
     padding-right: 0px;
@@ -51,6 +54,7 @@ section {
     display: inline-flex;
     align-items: center;
     justify-content: space-evenly;
+    text-transform: capitalize;
 
 }
 .navbar ul li {
