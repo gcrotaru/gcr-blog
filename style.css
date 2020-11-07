@@ -7,26 +7,14 @@
 
 
 body {
-    font-family: 'Roboto Condensed', sans-serif;
+    
+    font-family: 'Tajawal', sans-serif;
     margin: 0px;
     padding: 0px;
     width: 100vw;
     height: 100vh;
-   /* overflow: hidden;           /*   REASON WHY IS IN COMMENT: CODE NOT WORKING YET!!! */
+
 }
-
-
-/*.main-page-container {                     REASON WHY IS IN COMMENT: CODE NOT WORKING YET!!! 
-    display: block;
-    scroll-behavior: smooth;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-}
-section {
-    scroll-snap-align: center; 
-} 
-*/
-
 
 /** start navbar styling **/
 .navbar {
@@ -52,7 +40,7 @@ section {
     margin: 7px;
     width: 35%;
     display: inline-flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-evenly;
     text-transform: capitalize;
 
@@ -136,4 +124,48 @@ section {
     background: linear-gradient(180deg, white, #5c5c5c);
     color: white;
     text-align: center;
+}
+
+#animation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.box1 { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;   
+    background-color: red;
+    color: black;
+    text-align: center;
+
+}
+
+.box2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.box3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
 }
