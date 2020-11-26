@@ -1,9 +1,8 @@
 
-/*  #make all content on website being measured in border box instead of content box: counts border, padding, and margins */
+/* #make all content on website being measured in border box instead of content box: counts border, padding, and margins */
 * {
     box-sizing: border-box;
 }
-/* end# */
 
 
 body {
